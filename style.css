@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: Lexend Deca;
+    font-weight: 400;
+    line-height: 22px;
+}
+h2{
+    margin: 30px 0 30px 0;
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 150px;
+}
+section{
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box{
+    padding: 50px;
+    height: 60vh;
+}
+.one{
+    border-radius: 10px 0 0 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+.two{
+    background-color: hsl(184, 100%, 22%);
+}
+.three{
+    border-radius: 0 10px 10px 0;
+    background-color: hsl(179, 100%, 13%);
+}
+button{
+    cursor: pointer;
+    padding: 10px 25px 10px 25px;
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 20px;
+    border:2px solid hsl(0, 0%, 95%) ;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+}
+.one button{
+    color: hsl(31, 77%, 52%);
+}
+.one button:hover{
+    background-color:hsl(31, 77%, 52%) ;
+}
+.two button{
+    color:hsl(184, 100%, 22%);
+}
+.two button:hover{
+    background-color:hsl(184, 100%, 22%) ;
+}
+.three button{
+    color: hsl(179, 100%, 13%);
+}
+.three button:hover{
+    background-color:hsl(179, 100%, 13%);
+}
+button:hover{
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media screen and (max-width: 375px) {
+    .container{
+        margin:50px 0 50px 0;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .one{
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+}
+    .three{
+        border-radius: 0 0 10px 10px;
+}
+.box{
+    height: 50vh;
+}
+p{
+    margin-bottom: 50px;
+}
+}
